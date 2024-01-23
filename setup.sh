@@ -38,7 +38,7 @@ pip3 install ROPgadget
 
 # Gef
 echo "[*] install GEF"
-wget -qO- https://raw.githubusercontent.com/bata24/gef/dev/install.sh --no-check-certificate | sudo sh
+wget -qO- https://raw.githubusercontent.com/okupay-teppi/katagaitai-ctf/main/install_gef.sh --no-check-certificate | /bin/sh
 
 # PyCryptodome
 pip3 install pycryptodome
