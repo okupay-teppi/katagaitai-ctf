@@ -10,7 +10,7 @@ GHIDRA_URL="https://github.com/NationalSecurityAgency/ghidra/releases/download/G
 wget $GHIDRA_URL -O ghidra.zip --no-check-certificate
 unzip ghidra.zip -d ~
 rm ghidra.zip
-echo 'export PATH="$PATH:$HOME/ghidra_11.0_PUBLIC"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/ghidra_11.2.1_PUBLIC"' >> ~/.bashrc
 
 # Python環境の設定
 echo "[*] Setup Python virtual environment"
