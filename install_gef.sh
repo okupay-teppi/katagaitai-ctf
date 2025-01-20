@@ -50,5 +50,7 @@ if [ ! -e "$GDBINIT_PATH" ] || [ "x$(grep "$STARTUP_COMMAND" "$GDBINIT_PATH")" =
     echo "$STARTUP_COMMAND" >> "$GDBINIT_PATH"
 fi
 
+deactive
+
 echo "[+] INSTALLATION SUCCESSFUL"
 exit 0
