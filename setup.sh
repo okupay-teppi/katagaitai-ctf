@@ -30,7 +30,7 @@ pip3 install pycryptodome
 
 # Gefのインストール
 echo "[*] install GEF"
-sudo wget -qO- https://raw.githubusercontent.com/okupay-teppi/katagaitai-ctf/refs/heads/main/install_gef.sh --no-check-certificate | sh
+wget -qO- https://raw.githubusercontent.com/okupay-teppi/katagaitai-ctf/refs/heads/main/install_gef.sh --no-check-certificate | sh
 
 deactivate
 
