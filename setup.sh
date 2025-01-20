@@ -15,7 +15,7 @@ echo 'export PATH="$PATH:$HOME/ghidra_11.0_PUBLIC"' >> ~/.bashrc
 # Python環境の設定
 echo "[*] Setup Python virtual environment"
 python3 -m venv ~/venv
-source ~/venv/bin/activate
+. ~/venv/bin/activate
 
 # pwntoolsのインストール
 echo "[*] install pwntools"
