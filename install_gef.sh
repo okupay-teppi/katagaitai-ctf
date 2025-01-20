@@ -5,6 +5,7 @@ sudo apt update
 sudo apt install -y gdb-multiarch binutils gcc file python3-pip ruby-dev git
 
 echo "[+] pip3"
+. ~/venv/bin/activate
 pip3 install crccheck unicorn capstone ropper keystone-engine tqdm
 
 echo "[+] install seccomp-tools, one_gadget"
@@ -48,6 +49,8 @@ STARTUP_COMMAND="source $GEF_PATH"
 if [ ! -e "$GDBINIT_PATH" ] || [ "x$(grep "$STARTUP_COMMAND" "$GDBINIT_PATH")" = "x" ]; then
     echo "$STARTUP_COMMAND" >> "$GDBINIT_PATH"
 fi
+
+deactive
 
 echo "[+] INSTALLATION SUCCESSFUL"
 exit 0
