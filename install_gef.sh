@@ -5,6 +5,7 @@ sudo apt update
 sudo apt install -y gdb-multiarch binutils gcc file python3-pip ruby-dev git
 
 echo "[+] pip3"
+. ~/venv/bin/activate
 pip3 install crccheck unicorn capstone ropper keystone-engine tqdm
 
 echo "[+] install seccomp-tools, one_gadget"
